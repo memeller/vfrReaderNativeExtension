@@ -13,6 +13,8 @@ The viewer adds thumbs, bookmarks, mail and print options, just as in the origin
 * `VfrPdfReader.isSupported():Boolean`
 reutrns true if supported, false if not supported
 
+### Info ###
+On iPad the pdf window sometimes has problems with rotation (for example if the application is using landscape orientation, the window is shown in portrait / after pressing 'done' the view is dismissed, but the application is rotated (portrait instead of landscape / landscape instead of portrait). It appears to be a bug in Adobe AIR, since in simulator it runs well. It is fixed in AIR 3.3 (currently available from labs.adobe.com), so just compile your app using 3.3 and everything should work well.
 
 ### Usage ###
 download [.swc](https://github.com/memeller/vfrReaderNativeExtension/raw/master/build/VfrPdfReader.swc) and [.ane](https://github.com/memeller/vfrReaderNativeExtension/raw/master/build/VfrPdfReader.ane) files from build directory and add them to project  
