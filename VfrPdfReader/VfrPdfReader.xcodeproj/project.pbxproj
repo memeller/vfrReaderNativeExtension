@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C5A64E9167A413F005ED5D7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E4971524D25900ABAD50 /* MessageUI.framework */; };
+		8C5A64EA167A4146005ED5D7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E48C1524D22D00ABAD50 /* QuartzCore.framework */; };
+		8C5A64EB167A414D005ED5D7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E48E1524D23500ABAD50 /* UIKit.framework */; };
 		8CF5E3D91524D1AC00ABAD50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E3D81524D1AC00ABAD50 /* Foundation.framework */; };
 		8CF5E3DF1524D1AC00ABAD50 /* VfrPdfReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5E3DE1524D1AC00ABAD50 /* VfrPdfReader.m */; };
 		8CF5E3E91524D1AC00ABAD50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E3E81524D1AC00ABAD50 /* UIKit.framework */; };
@@ -55,14 +58,7 @@
 		8CF5E4891524D1CA00ABAD50 /* ThumbsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5E4511524D1CA00ABAD50 /* ThumbsViewController.m */; };
 		8CF5E48A1524D1CA00ABAD50 /* UIXToolbarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CF5E4521524D1CA00ABAD50 /* UIXToolbarView.h */; };
 		8CF5E48B1524D1CA00ABAD50 /* UIXToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF5E4531524D1CA00ABAD50 /* UIXToolbarView.m */; };
-		8CF5E48D1524D22D00ABAD50 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E48C1524D22D00ABAD50 /* QuartzCore.framework */; };
-		8CF5E48F1524D23500ABAD50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E48E1524D23500ABAD50 /* UIKit.framework */; };
 		8CF5E4941524D24C00ABAD50 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E4931524D24C00ABAD50 /* ImageIO.framework */; };
-		8CF5E4961524D25200ABAD50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E4951524D25100ABAD50 /* CoreGraphics.framework */; };
-		8CF5E4981524D25900ABAD50 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF5E4971524D25900ABAD50 /* MessageUI.framework */; };
-		8CF5E49A1524DA0500ABAD50 /* AppIcon-057.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5E4041524D1CA00ABAD50 /* AppIcon-057.png */; };
-		8CF5E49B1524DA0500ABAD50 /* AppIcon-072.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5E4051524D1CA00ABAD50 /* AppIcon-072.png */; };
-		8CF5E49C1524DA0500ABAD50 /* AppIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5E4061524D1CA00ABAD50 /* AppIcon-114.png */; };
 		8CF5E49D1524DA0500ABAD50 /* Reader-Button-H.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5E4071524D1CA00ABAD50 /* Reader-Button-H.png */; };
 		8CF5E49E1524DA0500ABAD50 /* Reader-Button-H@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5E4081524D1CA00ABAD50 /* Reader-Button-H@2x.png */; };
 		8CF5E49F1524DA0500ABAD50 /* Reader-Button-N.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CF5E4091524D1CA00ABAD50 /* Reader-Button-N.png */; };
@@ -99,9 +95,6 @@
 		8CF5E3E81524D1AC00ABAD50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8CF5E3EB1524D1AC00ABAD50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		8CF5E4021524D1CA00ABAD50 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
-		8CF5E4041524D1CA00ABAD50 /* AppIcon-057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-057.png"; sourceTree = "<group>"; };
-		8CF5E4051524D1CA00ABAD50 /* AppIcon-072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-072.png"; sourceTree = "<group>"; };
-		8CF5E4061524D1CA00ABAD50 /* AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon-114.png"; sourceTree = "<group>"; };
 		8CF5E4071524D1CA00ABAD50 /* Reader-Button-H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-H.png"; sourceTree = "<group>"; };
 		8CF5E4081524D1CA00ABAD50 /* Reader-Button-H@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-H@2x.png"; sourceTree = "<group>"; };
 		8CF5E4091524D1CA00ABAD50 /* Reader-Button-N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reader-Button-N.png"; sourceTree = "<group>"; };
@@ -121,7 +114,6 @@
 		8CF5E41A1524D1CA00ABAD50 /* NativePdfReaderHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NativePdfReaderHelper.m; path = ../NativePdfReader/NativePdfReaderHelper.m; sourceTree = "<group>"; };
 		8CF5E4231524D1CA00ABAD50 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8CF5E4241524D1CA00ABAD50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		8CF5E4251524D1CA00ABAD50 /* Reader.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Reader.pdf; sourceTree = "<group>"; };
 		8CF5E4271524D1CA00ABAD50 /* CGPDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGPDFDocument.h; sourceTree = "<group>"; };
 		8CF5E4281524D1CA00ABAD50 /* CGPDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGPDFDocument.m; sourceTree = "<group>"; };
 		8CF5E4301524D1CA00ABAD50 /* ReaderConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderConstants.h; sourceTree = "<group>"; };
@@ -172,11 +164,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF5E4981524D25900ABAD50 /* MessageUI.framework in Frameworks */,
-				8CF5E4961524D25200ABAD50 /* CoreGraphics.framework in Frameworks */,
+				8C5A64EB167A414D005ED5D7 /* UIKit.framework in Frameworks */,
+				8C5A64EA167A4146005ED5D7 /* QuartzCore.framework in Frameworks */,
+				8C5A64E9167A413F005ED5D7 /* MessageUI.framework in Frameworks */,
 				8CF5E4941524D24C00ABAD50 /* ImageIO.framework in Frameworks */,
-				8CF5E48F1524D23500ABAD50 /* UIKit.framework in Frameworks */,
-				8CF5E48D1524D22D00ABAD50 /* QuartzCore.framework in Frameworks */,
 				8CF5E3D91524D1AC00ABAD50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,9 +248,6 @@
 		8CF5E4031524D1CA00ABAD50 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				8CF5E4041524D1CA00ABAD50 /* AppIcon-057.png */,
-				8CF5E4051524D1CA00ABAD50 /* AppIcon-072.png */,
-				8CF5E4061524D1CA00ABAD50 /* AppIcon-114.png */,
 				8CF5E4071524D1CA00ABAD50 /* Reader-Button-H.png */,
 				8CF5E4081524D1CA00ABAD50 /* Reader-Button-H@2x.png */,
 				8CF5E4091524D1CA00ABAD50 /* Reader-Button-N.png */,
@@ -289,7 +277,6 @@
 			isa = PBXGroup;
 			children = (
 				8CF5E4221524D1CA00ABAD50 /* Localizable.strings */,
-				8CF5E4251524D1CA00ABAD50 /* Reader.pdf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -416,6 +403,9 @@
 /* Begin PBXProject section */
 		8CF5E3CC1524D1AB00ABAD50 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = 8CF5E3CF1524D1AB00ABAD50 /* Build configuration list for PBXProject "VfrPdfReader" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -447,9 +437,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CF5E49A1524DA0500ABAD50 /* AppIcon-057.png in Resources */,
-				8CF5E49B1524DA0500ABAD50 /* AppIcon-072.png in Resources */,
-				8CF5E49C1524DA0500ABAD50 /* AppIcon-114.png in Resources */,
 				8CF5E49D1524DA0500ABAD50 /* Reader-Button-H.png in Resources */,
 				8CF5E49E1524DA0500ABAD50 /* Reader-Button-H@2x.png in Resources */,
 				8CF5E49F1524DA0500ABAD50 /* Reader-Button-N.png in Resources */,
@@ -563,6 +550,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -579,6 +567,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -623,6 +612,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VfrPdfReader/VfrPdfReader-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "VfrPdfReaderTests/VfrPdfReaderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;
@@ -638,6 +628,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VfrPdfReader/VfrPdfReader-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "VfrPdfReaderTests/VfrPdfReaderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = octest;

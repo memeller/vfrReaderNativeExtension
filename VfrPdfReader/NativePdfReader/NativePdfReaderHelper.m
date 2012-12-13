@@ -28,8 +28,12 @@ if (document != nil) // Must have a valid ReaderDocument object in order to proc
     readerViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     readerViewController.modalPresentationStyle = UIModalPresentationFullScreen;
     
-    [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentModalViewController:readerViewController animated:YES];
-    
+    //ios 6 deprecated presentModalViewController, but we still need ios 5 compatibility
+    if([[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] respondsToSelector:@selector(presentViewController:animated:completion:)])
+        [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentViewController:readerViewController animated:YES completion:^{/* done */}];
+    else
+        [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentModalViewController:readerViewController animated:YES];
+
     [readerViewController release]; // Release the ReaderViewController
 }
 }
@@ -37,7 +41,12 @@ if (document != nil) // Must have a valid ReaderDocument object in order to proc
 
 - (void)dismissReaderViewController:(ReaderViewController *)viewController
 {
-    [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissModalViewControllerAnimated:YES];
+    //ios 6 deprecated dismissModalViewControllerAnimated, but we still need ios 5 compatibility
+    if([[[[UIApplication sharedApplication] keyWindow] rootViewController] respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
+        [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:(YES) completion:nil];
+    else if([[[[UIApplication sharedApplication] keyWindow] rootViewController] respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
+        [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissModalViewControllerAnimated:YES];
+    //[[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissModalViewControllerAnimated:YES];
     
 }
 

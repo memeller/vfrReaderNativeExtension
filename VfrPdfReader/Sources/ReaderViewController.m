@@ -101,7 +101,6 @@
 		theScrollView.contentOffset = contentOffset; // Update content offset
 	}
 }
-
 - (void)updateToolbarBookmarkIcon
 {
 #ifdef DEBUGX

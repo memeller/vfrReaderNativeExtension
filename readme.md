@@ -1,4 +1,17 @@
 # vfr Rader Native Extension #
+
+### Latest changes:
+* Updated for iOS 6 (but also kept iOS 5 support)
+* Included localization strings for German, Polish and English
+* Includes a version for iOS simulator
+
+** important **
+
+* if you get any errors about missing functions during compilation of your app, please make sure that you are using latest air SDK
+* the example project does not include the Readme.pdf file, so it will not show you any file if you don't include your own pdf 
+
+### About ###
+
 Use the alternative vfr Reader for viewing pdf files in Adobe AIR for iOS
 
 Original source - https://github.com/vfr/Reader, screens available at http://www.vfr.org/
@@ -13,8 +26,6 @@ The viewer adds thumbs, bookmarks, mail and print options, just as in the origin
 * `VfrPdfReader.isSupported():Boolean`
 reutrns true if supported, false if not supported
 
-### Info ###
-On iPad the pdf window sometimes has problems with rotation (for example if the application is using landscape orientation, the window is shown in portrait / after pressing 'done' the view is dismissed, but the application is rotated (portrait instead of landscape / landscape instead of portrait). It appears to be a bug in Adobe AIR, since in simulator it runs well. It is fixed in AIR 3.3 (currently available from labs.adobe.com), so just compile your app using 3.3 and everything should work well.
 
 ### Usage ###
 download [.swc](https://github.com/memeller/vfrReaderNativeExtension/raw/master/build/VfrPdfReader.swc) and [.ane](https://github.com/memeller/vfrReaderNativeExtension/raw/master/build/VfrPdfReader.ane) files from build directory and add them to project  
@@ -39,4 +50,4 @@ platform options file has to be specified, including these frameworks:
 
 `-framework MessageUI -framework ImageIO` (other ones are already included in AIR)
 
-Tested on iPad, iOS 5.01
+Tested on iPad, iOS 5.01, iOS 6.0

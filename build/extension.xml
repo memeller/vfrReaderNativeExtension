@@ -20,6 +20,13 @@ written permission of Adobe.
 	          <finalizer>vfrPdfReaderExtFinalizer</finalizer>
 	        </applicationDeployment>
 	      </platform>
+          <platform name="iPhone-x86">
+              <applicationDeployment>
+                  <nativeLibrary>libVfrPdfReader.a</nativeLibrary>
+                  <initializer>vfrPdfReaderExtInitializer</initializer>
+                  <finalizer>vfrPdfReaderExtFinalizer</finalizer>
+              </applicationDeployment>
+	      </platform>
           <platform name="default"> 
               <applicationDeployment/> 
           </platform>
