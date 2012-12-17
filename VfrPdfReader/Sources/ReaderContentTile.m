@@ -1,6 +1,6 @@
 //
 //	ReaderContentTile.m
-//	Reader v2.5.4
+//	Reader v2.6.0
 //
 //	Created by Julius Oklamcak on 2011-07-01.
 //	Copyright © 2011-2012 Julius Oklamcak. All rights reserved.
@@ -32,42 +32,28 @@
 #define LEVELS_OF_DETAIL 4
 #define LEVELS_OF_DETAIL_BIAS 3
 
-//#pragma mark Properties
-
-//@synthesize ;
-
 #pragma mark ReaderContentTile class methods
 
 + (CFTimeInterval)fadeDuration
 {
-#ifdef DEBUGX
-	NSLog(@"%s", __FUNCTION__);
-#endif
-
-	return 0.001; // iOS bug workaround
-
-	//return 0.0; // No fading wanted
+	return 0.001; // iOS bug (flickering tiles) workaround
 }
 
 #pragma mark ReaderContentTile instance methods
 
 - (id)init
 {
-#ifdef DEBUGX
-	NSLog(@"%s", __FUNCTION__);
-#endif
-
 	if ((self = [super init]))
 	{
-		self.levelsOfDetail = LEVELS_OF_DETAIL;
+		self.levelsOfDetail = LEVELS_OF_DETAIL; // Zoom levels
 
-		self.levelsOfDetailBias = LEVELS_OF_DETAIL_BIAS;
+		UIScreen *mainScreen = [UIScreen mainScreen]; // Main screen
 
-		UIScreen *mainScreen = [UIScreen mainScreen]; // Screen
+		CGFloat screenScale = [mainScreen scale]; // Main screen scale
 
-		CGFloat screenScale = [mainScreen scale]; // Screen scale
+		self.levelsOfDetailBias = (screenScale > 1.0f) ? 1 : LEVELS_OF_DETAIL_BIAS;
 
-		CGRect screenBounds = [mainScreen bounds]; // Screen bounds
+		CGRect screenBounds = [mainScreen bounds]; // Main screen bounds
 
 		CGFloat w_pixels = (screenBounds.size.width * screenScale);
 
@@ -81,15 +67,6 @@
 	}
 
 	return self;
-}
-
-- (void)dealloc
-{
-#ifdef DEBUGX
-	NSLog(@"%s", __FUNCTION__);
-#endif
-
-	[super dealloc];
 }
 
 @end

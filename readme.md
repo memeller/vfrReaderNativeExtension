@@ -1,9 +1,10 @@
 # vfr Rader Native Extension #
 
 ### Latest changes:
+* Updated the vfr reader to latest version from github (2.6, includes ARC support)
 * Updated for iOS 6 (but also kept iOS 5 support)
 * Included localization strings for German, Polish and English
-* Includes a version for iOS simulator
+* Included a version for iOS simulator
 
 ** important **
 
@@ -14,7 +15,9 @@
 
 Use the alternative vfr Reader for viewing pdf files in Adobe AIR for iOS
 
-Original source - https://github.com/vfr/Reader, screens available at http://www.vfr.org/
+Original source - `https://github.com/vfr/Reader`, screens available at http://www.vfr.org/
+
+You can donate money to the original author on above page, i've only made this accessible from AIR for iOS.
 
 author of this extension: Paweł Meller
 

@@ -34,7 +34,6 @@ if (document != nil) // Must have a valid ReaderDocument object in order to proc
     else
         [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentModalViewController:readerViewController animated:YES];
 
-    [readerViewController release]; // Release the ReaderViewController
 }
 }
 

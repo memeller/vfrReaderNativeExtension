@@ -96,7 +96,7 @@ void vfrPdfReaderContextInitializer(void* extData, const uint8_t* ctxType, FRECo
 void vfrPdfReaderContextFinalizer(FREContext ctx) {
     
 	[nativePdfReader setContext:NULL];
-	[nativePdfReader release];
+
 	nativePdfReader = nil;
     
     return;

@@ -1,6 +1,6 @@
 //
 //	ReaderThumbRequest.h
-//	Reader v2.5.4
+//	Reader v2.6.1
 //
 //	Created by Julius Oklamcak on 2011-09-01.
 //	Copyright © 2011-2012 Julius Oklamcak. All rights reserved.
@@ -27,43 +27,20 @@
 
 @class ReaderThumbView;
 
-@interface ReaderThumbRequest : NSObject
-{
-@private // Instance variables
+@interface ReaderThumbRequest : NSObject <NSObject>
 
-	NSURL *_fileURL;
-
-	NSString *_guid;
-
-	NSString *_password;
-
-	NSString *_cacheKey;
-
-	NSString *_thumbName;
-
-	ReaderThumbView *_thumbView;
-
-	NSUInteger _targetTag;
-
-	NSInteger _thumbPage;
-
-	CGSize _thumbSize;
-
-	CGFloat _scale;
-}
-
-@property (nonatomic, retain, readonly) NSURL *fileURL;
-@property (nonatomic, retain, readonly) NSString *guid;
-@property (nonatomic, retain, readonly) NSString *password;
-@property (nonatomic, retain, readonly) NSString *cacheKey;
-@property (nonatomic, retain, readonly) NSString *thumbName;
-@property (nonatomic, retain, readonly) ReaderThumbView *thumbView;
+@property (nonatomic, strong, readonly) NSURL *fileURL;
+@property (nonatomic, strong, readonly) NSString *guid;
+@property (nonatomic, strong, readonly) NSString *password;
+@property (nonatomic, strong, readonly) NSString *cacheKey;
+@property (nonatomic, strong, readonly) NSString *thumbName;
+@property (nonatomic, strong, readwrite) ReaderThumbView *thumbView;
 @property (nonatomic, assign, readonly) NSUInteger targetTag;
 @property (nonatomic, assign, readonly) NSInteger thumbPage;
 @property (nonatomic, assign, readonly) CGSize thumbSize;
 @property (nonatomic, assign, readonly) CGFloat scale;
 
-+ (id)forView:(ReaderThumbView *)view fileURL:(NSURL *)url password:(NSString *)phrase guid:(NSString *)guid page:(NSInteger)page size:(CGSize)size;
++ (id)newForView:(ReaderThumbView *)view fileURL:(NSURL *)url password:(NSString *)phrase guid:(NSString *)guid page:(NSInteger)page size:(CGSize)size;
 
 - (id)initWithView:(ReaderThumbView *)view fileURL:(NSURL *)url password:(NSString *)phrase guid:(NSString *)guid page:(NSInteger)page size:(CGSize)size;
 
