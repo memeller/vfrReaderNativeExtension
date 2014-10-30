@@ -34,7 +34,7 @@
 
 #pragma mark ReaderDocumentOutline functions
 
-void logDictionaryEntry(const char *key, CGPDFObjectRef object, void *info)
+static void logDictionaryEntry(const char *key, CGPDFObjectRef object, void *info)
 {
 	//CGPDFDictionaryApplyFunction(dictionary, logDictionaryEntry, NULL);
 
