@@ -32,7 +32,7 @@ if (document != nil) // Must have a valid ReaderDocument object in order to proc
     if([[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] respondsToSelector:@selector(presentViewController:animated:completion:)])
         [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentViewController:readerViewController animated:YES completion:^{/* done */}];
     else
-        [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentModalViewController:readerViewController animated:YES];
+        [[[[[UIApplication sharedApplication] windows] objectAtIndex:0] rootViewController] presentViewController:readerViewController animated:YES completion:nil];
 
 }
 }
@@ -44,7 +44,7 @@ if (document != nil) // Must have a valid ReaderDocument object in order to proc
     if([[[[UIApplication sharedApplication] keyWindow] rootViewController] respondsToSelector:@selector(dismissViewControllerAnimated:completion:)])
         [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:(YES) completion:nil];
     else if([[[[UIApplication sharedApplication] keyWindow] rootViewController] respondsToSelector:@selector(dismissModalViewControllerAnimated:)])
-        [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissModalViewControllerAnimated:YES];
+        [[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissViewControllerAnimated:YES completion:nil];
     //[[[[UIApplication sharedApplication] keyWindow] rootViewController] dismissModalViewControllerAnimated:YES];
     
 }

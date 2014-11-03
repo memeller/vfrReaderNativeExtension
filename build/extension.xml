@@ -9,9 +9,9 @@ source other than Adobe, then your use, modification, or distribution of it requ
 written permission of Adobe.
 
 -->
-<extension xmlns="http://ns.adobe.com/air/extension/3.1">
+<extension xmlns="http://ns.adobe.com/air/extension/14.0">
 	  <id>pl.mllr.extensions.vfrPdfReader</id>
-	  <versionNumber>1</versionNumber>
+	  <versionNumber>2</versionNumber>
 	  <platforms>
 	      <platform name="iPhone-ARM">
 	        <applicationDeployment>

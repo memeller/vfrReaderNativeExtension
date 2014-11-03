@@ -179,14 +179,14 @@
 
 		pageNumberLabel.autoresizesSubviews = NO;
 		pageNumberLabel.autoresizingMask = UIViewAutoresizingNone;
-		pageNumberLabel.textAlignment = UITextAlignmentCenter;
+		pageNumberLabel.textAlignment = NSTextAlignmentCenter;
 		pageNumberLabel.backgroundColor = [UIColor clearColor];
 		pageNumberLabel.textColor = [UIColor whiteColor];
 		pageNumberLabel.font = [UIFont systemFontOfSize:16.0f];
 		pageNumberLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
 		pageNumberLabel.shadowColor = [UIColor blackColor];
 		pageNumberLabel.adjustsFontSizeToFitWidth = YES;
-		pageNumberLabel.minimumFontSize = 12.0f;
+		pageNumberLabel.minimumScaleFactor = 12.0f;
 
 		[pageNumberView addSubview:pageNumberLabel]; // Add label view
 
